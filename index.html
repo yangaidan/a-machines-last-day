@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b10">
+  <meta name="description" content="A first-person story of the Apollo 11 Lunar Module descent stage, left behind at Tranquility Base.">
+  <title>Left Behind: The Untold Stories of NASA's Spacecraft</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@500;600&display=swap');
+    :root{--night:#080b10;--ink:#f2efe8;--muted:#a6a8aa;--gold:#d4ae73;--line:#ffffff24;--panel:#11161d;--mono:'DM Mono',monospace;--sans:'DM Sans',sans-serif;--serif:'Playfair Display',serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--ink);font-family:var(--sans);line-height:1.65}a{color:inherit}.mono,.eyebrow,.label,.nav a,.chapter-index{font-family:var(--mono);text-transform:uppercase;letter-spacing:.13em;font-size:.72rem}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.topbar{position:absolute;z-index:3;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:28px max(24px,calc((100vw - 1160px)/2));border-bottom:1px solid #ffffff1c}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:.78rem;letter-spacing:.11em;text-transform:uppercase}.brand-mark{width:30px;height:30px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:var(--serif)}.nav{display:flex;gap:28px}.nav a{text-decoration:none;color:#d1d1d0}.nav a:hover,.text-link:hover{color:var(--gold)}
+    .hero{min-height:760px;height:100svh;max-height:1000px;position:relative;overflow:hidden;display:flex;align-items:flex-end;background:radial-gradient(ellipse at 76% 44%,#1e2836 0,#101722 25%,#090d14 55%,#080b10 75%)}.stars,.stars:before,.stars:after{position:absolute;inset:0;content:"";background-image:radial-gradient(1px 1px at 10% 15%,#fff9 50%,transparent 55%),radial-gradient(1px 1px at 45% 21%,#fff8 50%,transparent 55%),radial-gradient(1px 1px at 85% 11%,#fff9 50%,transparent 55%),radial-gradient(1.5px 1.5px at 68% 33%,#fff8 50%,transparent 55%),radial-gradient(1px 1px at 22% 55%,#fff7 50%,transparent 55%),radial-gradient(1px 1px at 92% 62%,#fff8 50%,transparent 55%),radial-gradient(1px 1px at 54% 73%,#fff8 50%,transparent 55%);background-size:100% 100%}.stars:before{transform:translate(40px,70px);opacity:.45}.earth{position:absolute;width:118px;height:118px;top:21%;right:21%;border-radius:50%;background:radial-gradient(circle at 36% 34%,#dfe9ec 0 5%,#8eb2bd 8%,#34536b 36%,#162532 69%,#06090d 72%);box-shadow:0 0 65px #749aac42,0 0 150px #6f9ca526}.earth:after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid #e4f4ff24}.horizon{position:absolute;width:170%;height:400px;left:-35%;bottom:-260px;border-radius:50% 50% 0 0;background:radial-gradient(ellipse at 50% 0,#4a4946 0,#262727 36%,#14171a 70%);box-shadow:0 -25px 75px #9c9b8d13}.horizon:before{content:"";position:absolute;inset:14px 0 auto;height:1px;background:linear-gradient(90deg,transparent,#c3b9a359,transparent)}.landscape{position:absolute;inset:0;background:linear-gradient(0deg,#080b10 0,transparent 35%)}.lander{position:absolute;width:min(44vw,475px);height:390px;right:14%;bottom:80px;filter:drop-shadow(0 20px 38px #0009);opacity:.91}.hero-copy{position:relative;z-index:2;padding-bottom:117px;max-width:660px}.eyebrow{color:var(--gold);display:flex;align-items:center;gap:11px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}h1{font:500 clamp(3.6rem,9vw,8rem)/.92 var(--serif);letter-spacing:-.055em;margin:25px 0 23px;max-width:780px}h1 span{display:block;color:#c6c4be;font-size:.65em;font-style:italic;letter-spacing:-.035em;margin-top:.13em}.hero-copy p{max-width:440px;color:#c1c3c5;font-size:1.05rem}.hero-actions{display:flex;align-items:center;gap:26px;margin-top:35px}.button{display:inline-flex;align-items:center;gap:13px;background:var(--gold);color:#101114;text-decoration:none;padding:14px 19px;font-weight:700;font-size:.85rem}.button:hover{background:#ebc98e}.text-link{font-size:.82rem;text-decoration:none;color:#d5d5d1}.scroll-note{position:absolute;right:5%;bottom:36px;writing-mode:vertical-rl;color:#c1c1bd8a}.scroll-note:after{content:"";display:inline-block;width:1px;height:45px;background:#c1c1bd80;margin-top:12px}
+    .chapter{padding:96px 0 80px;background:#0c1016}.chapter-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;padding-bottom:38px;border-bottom:1px solid var(--line)}.chapter-index{color:var(--gold)}h2{font:500 clamp(2.5rem,5vw,4.5rem)/1.05 var(--serif);letter-spacing:-.045em;margin:17px 0 0}.chapter-deck{max-width:430px;color:#b9bbbc;margin:0 0 5px}.reader-tools{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px 0;border-bottom:1px solid var(--line);color:#adb0b2;font-size:.8rem}.reader-tools strong{color:var(--ink);font-weight:600}.jump-links{display:flex;gap:10px;flex-wrap:wrap}.jump-links a{color:var(--gold);text-decoration:none;border:1px solid #d4ae7355;border-radius:3px;padding:8px 11px;font-size:.76rem;min-height:40px;display:inline-flex;align-items:center}.jump-links a:hover,.jump-links a:focus-visible{border-color:var(--gold);background:#d4ae7315;outline:2px solid transparent}.at-a-glance{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:25px}.glance-item{background:#0c1016;padding:17px 20px}.glance-item .label{margin-bottom:6px}.glance-item p{font-size:.84rem;color:#d2d3d1;margin:0;line-height:1.5}.story-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,.7fr);gap:80px;padding-top:45px}.story{max-width:680px}.story-beat{padding:0 0 27px 22px;margin-bottom:27px;border-left:1px solid #d4ae7377;scroll-margin-top:20px}.story-beat:last-of-type{margin-bottom:0}.beat-label{display:block;color:var(--gold);font: .66rem var(--mono);text-transform:uppercase;letter-spacing:.12em;margin-bottom:7px}.story-beat h3{font:500 1.45rem/1.25 var(--serif);margin:0 0 9px;color:#f2efe8}.story-beat p{font:400 1rem/1.78 var(--sans);color:#d1d2d0;margin:0;max-width:610px}.story .aside{font:400 .83rem/1.65 var(--sans);color:#aaa;margin:25px 0 0;padding:13px 16px;background:#ffffff08;border-left:2px solid var(--gold)}.side-note{align-self:start;position:sticky;top:30px}.status-card,.science-card{background:var(--panel);border:1px solid var(--line);padding:24px}.status-card{margin-bottom:15px}.label{color:var(--gold);display:block;margin-bottom:12px}.status{display:inline-flex;align-items:center;gap:9px;color:#d9ded6;font-size:.87rem}.status:before{content:"";width:7px;height:7px;border-radius:50%;background:#9db489;box-shadow:0 0 11px #9db48988}.status-card p,.science-card p{font-size:.87rem;color:#c0c2c3;margin:12px 0 0}.science-card h3{font:500 1.35rem var(--serif);margin:0 0 11px}.science-card p{margin:0;line-height:1.75}.source-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:16px;padding:9px 12px;border:1px solid #d4ae7355;border-radius:3px;color:var(--gold);font-size:.72rem;line-height:1.35;text-decoration:none}.source-link:hover,.source-link:focus-visible{border-color:var(--gold);background:#d4ae7315;outline:2px solid transparent}.pullquote{margin:28px 0 0;padding:24px;background:#11161d;border-left:2px solid var(--gold);color:#d6c9ae;font:italic 1.15rem/1.55 var(--serif)}.pullquote small{display:block;margin-top:10px;color:#9fa1a2;font: .66rem var(--mono);letter-spacing:.12em;text-transform:uppercase}.next{padding:55px 0 65px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.next .label{margin:0 0 8px}.next h3{font:500 1.75rem var(--serif);margin:0}.next a{color:var(--gold);text-decoration:none;font-size:.83rem}.foot{border-top:1px solid var(--line);padding:25px 0 33px;color:#85898d;font-size:.75rem;display:flex;justify-content:space-between;gap:20px}.foot a{color:#aaa}.disclaimer{max-width:680px}
+    @media(max-width:760px){.wrap{width:min(100% - 38px,600px)}.topbar{padding:18px 20px}.nav{gap:16px}.nav a{font-size:.62rem}.hero{min-height:730px;height:94svh}.hero-copy{padding-bottom:105px}.earth{width:75px;height:75px;right:17%;top:22%}.lander{width:78vw;height:320px;right:4%;bottom:83px;opacity:.72}.horizon{bottom:-295px}.hero-copy p{font-size:.95rem}.scroll-note{display:none}.chapter{padding:66px 0 52px}.chapter-head,.story-grid{grid-template-columns:1fr;gap:22px}.chapter-head{padding-bottom:27px}.chapter-deck{font-size:.96rem}.reader-tools{align-items:flex-start;flex-direction:column}.at-a-glance{grid-template-columns:1fr;gap:1px;margin-top:17px}.glance-item{padding:13px 16px}.story-grid{padding-top:30px;gap:30px}.story-beat{padding-left:16px;margin-bottom:23px}.story-beat p{font-size:.98rem;line-height:1.72}.side-note{position:static;display:grid;grid-template-columns:1fr 1fr;gap:12px}.status-card{margin:0}.science-card,.status-card{padding:18px}.science-card h3{font-size:1.2rem}.next{padding:38px 0;gap:18px;align-items:flex-start;flex-direction:column}.foot{display:block}.foot>div+div{margin-top:14px}}
+    @media(max-width:430px){.brand{font-size:.66rem}.brand-mark{width:26px;height:26px}.nav{gap:12px}.nav a{letter-spacing:.07em}.hero-actions{gap:17px}.button{padding:12px 14px}.side-note{grid-template-columns:1fr}.jump-links{gap:8px}.jump-links a{font-size:.72rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    :root{--gold:#ffd166;--panel:#121e2b;--sans:'Nunito',sans-serif}
+    h1,h2,.science-card h3,.story-beat h3,.next h3{font-family:'Nunito',sans-serif;font-weight:800;letter-spacing:-.025em}
+    .button{border-radius:999px;background:#ffd166;padding:15px 22px;box-shadow:0 5px 0 #a96d35;color:#1e2630;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+    .button:hover{background:#ffe29a;transform:translateY(-2px);box-shadow:0 7px 0 #a96d35}
+    .jump-links a,.source-link{border-radius:999px;background:#20384b;border:2px solid #7bd8e7;color:#dffaff;font-weight:800;box-shadow:0 3px 0 #10212e;transition:transform .15s ease,background .15s ease}
+    .jump-links a:hover,.jump-links a:focus-visible,.source-link:hover,.source-link:focus-visible{border-color:#7bd8e7;background:#2b5367;transform:translateY(-1px);box-shadow:0 4px 0 #10212e}
+    .source-link{padding:10px 16px;min-height:46px;font-size:.8rem}
+    .science-card{position:relative;border:0;border-radius:20px 20px 20px 5px;background:#dffaff;color:#173044;box-shadow:0 5px 0 #69b9ca}
+    .science-card:nth-of-type(3){background:#fff0bf;box-shadow:0 5px 0 #d5a641}
+    .science-card:nth-of-type(4){background:#e6e0ff;box-shadow:0 5px 0 #9d8bda}
+    .science-card .label{color:#34576b;font-weight:800}.science-card h3{color:#173044}.science-card p{color:#294b5c}
+    .science-card .source-link{background:#173c50;color:#fff;border-color:#173c50;box-shadow:0 3px 0 #0b2635}
+    .status-card{border-radius:20px 20px 5px 20px;border:2px solid #9fca94;background:#e7f5df;color:#24452b;box-shadow:0 5px 0 #81aa73}
+    .status-card .label{color:#426742;font-weight:800}.status-card .status{color:#24452b;font-weight:800}.status-card p{color:#345739}
+    .story-beat{border-left:3px solid #ffd166}.story-beat p{font-size:1.04rem;line-height:1.8}
+    .story .aside{border-radius:0 14px 14px 0;background:#162431;color:#d2e0e7}
+    @media(max-width:760px){.button{min-height:48px}.source-link{width:100%;justify-content:center}.science-card,.status-card{border-radius:18px}.story-beat p{font-size:1rem}}
+    @media(prefers-reduced-motion:reduce){.button,.jump-links a,.source-link{transition:none}}
+    .descent-companion{position:fixed;z-index:20;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));display:grid;justify-items:center;gap:5px}
+    .companion-toggle{width:84px;height:94px;padding:3px 5px 0;border:0;background:transparent;color:#f2efe8;cursor:pointer;display:grid;justify-items:center;align-content:center;gap:0}
+    .companion-sprite{width:75px;height:68px;overflow:visible;filter:drop-shadow(0 4px 3px #0009);animation:descent-float 2.8s ease-in-out infinite;transform-origin:center bottom}
+    .companion-toggle:hover .companion-sprite,.companion-toggle:focus-visible .companion-sprite{filter:drop-shadow(0 0 9px #ffd166aa);transform:scale(1.08)}
+    .companion-toggle:focus-visible{outline:3px solid #7bd8e7;outline-offset:2px;border-radius:18px}
+    .companion-name{display:block;border-radius:999px;padding:3px 10px;background:#173c50;color:white;font:800 .7rem 'Nunito',sans-serif;box-shadow:0 2px 0 #0b2635}
+    .companion-bubble{position:absolute;right:0;bottom:104px;width:min(290px,calc(100vw - 32px));padding:17px 18px 16px;border-radius:20px 20px 5px 20px;background:#fff0bf;color:#23384a;box-shadow:0 7px 24px #0008,0 4px 0 #d5a641;line-height:1.5}
+    .companion-bubble[hidden]{display:none}
+    .companion-bubble:after{content:"";position:absolute;right:27px;bottom:-11px;width:22px;height:22px;background:#fff0bf;transform:rotate(45deg);border-radius:3px}
+    .companion-bubble p{position:relative;z-index:1;margin:0 18px 12px 0;font:700 .9rem/1.5 'Nunito',sans-serif}
+    .companion-bubble strong{color:#183e53}
+    .companion-links{position:relative;z-index:1;display:flex;gap:8px;flex-wrap:wrap}
+    .companion-links a{display:inline-flex;align-items:center;min-height:40px;padding:8px 12px;border-radius:999px;background:#173c50;color:#fff;text-decoration:none;font:800 .75rem 'Nunito',sans-serif}
+    .companion-links a:hover,.companion-links a:focus-visible{background:#2b637a;outline:2px solid #173c50;outline-offset:2px}
+    .companion-close{position:absolute;z-index:2;top:7px;right:8px;width:32px;height:32px;border:0;border-radius:50%;background:#fff9e7;color:#173c50;font-size:1.1rem;cursor:pointer}
+    .companion-close:focus-visible{outline:2px solid #173c50}
+    @keyframes descent-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    @media(max-width:500px){.descent-companion{right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom))}.companion-toggle{width:68px;height:80px}.companion-sprite{width:62px;height:57px}.companion-name{font-size:.66rem}.companion-bubble{bottom:87px}}
+    @media(prefers-reduced-motion:reduce){.companion-sprite{animation:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Left Behind home"><span class="brand-mark">L</span><span>Field notes from space</span></a>
+    <nav class="nav" aria-label="Main navigation"><a href="#chapter">Chapter 01</a><a href="#notes">Mission notes</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="title">
+      <div class="stars" aria-hidden="true"></div><div class="earth" aria-hidden="true"></div>
+      <svg class="lander" viewBox="0 0 500 410" role="img" aria-label="Illustration of the Apollo Lunar Module descent stage on the Moon">
+        <g fill="none" stroke="#b8b5a9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M148 174 85 310 48 350M352 174l63 136 37 40M115 182l-34 71M385 182l34 71"/><path d="m48 350-20 4 4 9h57l-4-9-37-4Zm367 0 20 4-4 9h-57l4-9 37-4Z" fill="#b8b5a9"/>
+          <path d="m174 117 20-53h112l20 53-10 82H184z" fill="#726f65"/><path d="M194 64h112l-15-27h-82z" fill="#8a8679"/><path d="m174 117 10 82h-25l-12-71zM326 117l-10 82h25l12-71z" fill="#69675f"/>
+          <path d="M202 116h96v49h-96z" fill="#202b32"/><path d="M210 124h34v34h-34zM253 124h37v34h-37z" fill="#536773" stroke-width="2"/><path d="M241 117v49" stroke="#b8b5a9" stroke-width="3"/>
+          <path d="M184 199h132l22 19-19 15H180l-18-15z" fill="#8b887c"/><path d="M185 233h132l-12 26H197z" fill="#68665f"/>
+          <path d="M236 258v37m28-37v37m-28-17h28"/><path d="M250 295v41m-10-41h20"/>
+          <path d="m119 204-52 22m314-22 52 22" stroke-width="3"/><path d="M67 226h-18m384 0h18M250 36V17m0 0-7 8m7-8 7 8" stroke-width="2"/>
+        </g>
+        <g fill="#d4ae73"><circle cx="250" cy="213" r="3"/><circle cx="250" cy="301" r="3"/></g>
+      </svg>
+      <div class="horizon" aria-hidden="true"></div><div class="landscape" aria-hidden="true"></div>
+      <div class="wrap hero-copy">
+        <div class="eyebrow">A NASA hardware story · Apollo 11</div>
+        <h1 id="title">Left Behind<span>The Untold Stories of NASA’s Spacecraft</span></h1>
+        <p>Meet the part of Apollo 11 that helped two astronauts land on the Moon. When they flew home, it stayed behind.</p>
+        <div class="hero-actions"><a class="button" href="#chapter">Enter Chapter 01 <span aria-hidden="true">↘</span></a><a class="text-link" href="#notes">Read the mission notes</a></div>
+      </div>
+      <div class="scroll-note mono" aria-hidden="true">Scroll to descend</div>
+    </section>
+    <section class="chapter" id="chapter" aria-labelledby="chapter-title">
+      <div class="wrap">
+        <div class="chapter-head"><div><div class="chapter-index">Chapter 01 · 2 minute read</div><h2 id="chapter-title">Two brothers. One Moon landing.</h2></div><p class="chapter-deck">I’m Descent, the lower stage of Eagle. My partner, Ascent, is the upper stage. We’re not real brothers, but in this story we work like a team of them.</p></div>
+        <div class="reader-tools"><strong>Follow the mission</strong><nav class="jump-links" aria-label="Chapter moments"><a href="#moment-1">Meet the brothers</a><a href="#moment-2">Landing</a><a href="#moment-3">Moon visit</a><a href="#moment-4">Liftoff</a><a href="#moment-5">Their shared job</a></nav></div>
+        <div class="at-a-glance" aria-label="Apollo 11 chapter summary"><div class="glance-item"><span class="label">Mission</span><p>Apollo 11 · July 1969</p></div><div class="glance-item"><span class="label">My job</span><p>Land the crew on the Moon</p></div><div class="glance-item"><span class="label">My status</span><p>Left at Tranquility Base</p></div></div>
+        <div class="story-grid">
+          <article class="story" aria-label="A fictional first-person account from the Apollo 11 descent stage">
+            <section class="story-beat" id="moment-1"><span class="beat-label">Scene 1 · Meet the brothers</span><h3>Different jobs, same mission</h3><p>Eagle was made of two stages. I’m Descent, the bottom stage. I have the landing engine, four legs, and room for supplies. My partner Ascent is the top stage. The astronauts ride with Ascent. “Ready to land?” I ask. “Ready when you are,” Ascent replies. (That conversation is imagined!)</p></section>
+            <section class="story-beat" id="moment-2"><span class="beat-label">Scene 2 · July 20, 1969</span><h3>Down to the Moon</h3><p>My engine slows our fall. The Moon gets closer. Armstrong steers around some big rocks. My landing legs reach the ground at the Sea of Tranquility. We made it! Ascent and I have brought the crew safely down.</p></section>
+            <section class="story-beat" id="moment-3"><span class="beat-label">Scene 3 · The Moon visit</span><h3>A place to explore</h3><p>Armstrong and Aldrin climb down my ladder. They explore, collect Moon rocks, and set up science tools. A plaque is attached to one of my legs. Ascent waits with the astronauts while they work. I keep our place on the Moon.</p></section>
+            <section class="story-beat" id="moment-4"><span class="beat-label">Scene 4 · Liftoff</span><h3>Ascent takes the crew up</h3><p>It’s time to go. Ascent’s engine fires, and the top stage lifts off with the astronauts. I stay behind at Tranquility Base. “See you in orbit!” I imagine calling. Ascent carries the crew back to their spacecraft in lunar orbit.</p></section>
+            <section class="story-beat" id="moment-5"><span class="beat-label">Scene 5 · Our shared job</span><h3>One landed. One lifted off.</h3><p>Ascent and I were built for different parts of the same mission. I helped the crew land; Ascent carried them back to lunar orbit. The astronauts would continue their journey home from there. We did our jobs together.</p></section>
+            <div class="aside"><strong>Story or fact?</strong> Descent and Ascent are the names I use as characters. The real spacecraft parts had no thoughts or conversations, and they weren’t actually brothers. Their mission roles and events are based on NASA records.</div>
+            <div class="pullquote">My job was to land them. Their journey continued without me.<small>— The descent stage · imagined voice</small></div>
+          </article>
+          <aside class="side-note" id="notes" aria-label="Status and science notes">
+            <div class="status-card"><span class="label">Where am I now?</span><div class="status">Still on the Moon</div><p>I’m still at Tranquility Base. The astronauts rode away in Eagle’s top half.</p></div>
+            <div class="science-card"><span class="label">Did you know? · 01</span><h3>Eagle had two stages</h3><p>The descent stage helped land on the Moon. The ascent stage carried the astronauts back to lunar orbit. In our story, Descent and Ascent are their character names.</p><a class="source-link" href="https://history.nasa.gov/wp-content/uploads/static/history/alsj/08_LM_%26_SLA_Overview_pp61-68.pdf" target="_blank" rel="noreferrer">See NASA’s Lunar Module facts ↗</a></div>
+            <div class="science-card"><span class="label">Did you know? · 02</span><h3>NASA spotted Eagle from space</h3><p>A spacecraft orbiting the Moon took a picture of the Apollo 11 landing place. You can see the lander and the astronauts’ walking paths.</p><a class="source-link" href="https://science.nasa.gov/earth/earth-observatory/apollo-11-landing-site-39408/" target="_blank" rel="noreferrer">See NASA’s Moon photo ↗</a></div>
+            <div class="science-card"><span class="label">Did you know? · 03</span><h3>The astronauts stayed about a day</h3><p>Armstrong and Aldrin spent a little more than 21 hours on the Moon before taking off again.</p><a class="source-link" href="https://www.nasa.gov/history/50-years-ago-apollo-11-the-journey-home/" target="_blank" rel="noreferrer">Read NASA’s mission story ↗</a></div>
+          </aside>
+        </div>
+        <div class="next"><div><div class="label">End of Chapter 01</div><h3>One half stayed. One half flew.</h3></div><a href="#top">Return to the beginning ↑</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="foot"><div class="wrap" style="display:flex;justify-content:space-between;gap:20px"><div class="disclaimer">An independent educational storytelling project. Not an official NASA website. Narrative voice is fictionalized; science notes link to NASA sources.</div><div>Made for the curious · <a href="https://www.nasa.gov/missions/apollo/apollo-11-mission-overview/" target="_blank" rel="noreferrer">Apollo 11 overview ↗</a></div></div></footer>
+  <aside class="descent-companion" aria-label="Descent story companion">
+    <div class="companion-bubble" id="descent-bubble" hidden>
+      <button class="companion-close" type="button" aria-label="Close Descent's message">×</button>
+      <p><strong>Hi, I'm Descent!</strong> I helped Eagle land on the Moon. Tap me whenever you want a little space-story help.</p>
+      <nav class="companion-links" aria-label="Descent shortcuts"><a href="#chapter">Read my story</a><a href="#notes">See the facts</a></nav>
+    </div>
+    <button class="companion-toggle" type="button" aria-label="Meet Descent" aria-expanded="false" aria-controls="descent-bubble">
+      <svg class="companion-sprite" viewBox="0 0 100 86" aria-hidden="true">
+        <g stroke="#243746" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M28 50 17 72l-8 7m63-29 11 22 8 7M18 72l-10 2v6h24l-2-5-12-3Zm54 0 10 2v6H58l2-5 12-3Z" fill="#ffd166"/>
+          <path d="m31 42 6-20h26l6 20-4 19H35z" fill="#68bfd0"/>
+          <path d="M36 24h28l-5-9H41z" fill="#8de0e7"/>
+          <path d="M31 42 22 48l4 10 9-2m34-14 9 6-4 10-9-2" fill="#42a7bd"/>
+          <path d="M28 59h44l8 8-7 6H27l-7-6z" fill="#f4c65e"/>
+          <path d="M38 39h24v13H38z" fill="#e8fbff" stroke-width="2"/>
+          <circle cx="44" cy="45" r="2" fill="#243746"/><circle cx="56" cy="45" r="2" fill="#243746"/>
+          <path d="M46 49q4 4 8 0" fill="none" stroke-width="1.7"/>
+          <path d="M49 15V7m0 0-4 4m4-4 4 4" fill="none" stroke="#ffd166" stroke-width="2"/>
+        </g>
+        <circle cx="31" cy="50" r="2" fill="#ff8f70"/><circle cx="69" cy="50" r="2" fill="#ff8f70"/>
+      </svg>
+      <span class="companion-name">Descent</span>
+    </button>
+  </aside>
+  <script>
+    (() => {
+      const toggle = document.querySelector('.companion-toggle');
+      const bubble = document.querySelector('#descent-bubble');
+      const close = document.querySelector('.companion-close');
+      const setOpen = (open) => {
+        bubble.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+      };
+      toggle.addEventListener('click', () => setOpen(bubble.hidden));
+      close.addEventListener('click', () => { setOpen(false); toggle.focus(); });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !bubble.hidden) { setOpen(false); toggle.focus(); }
+      });
+    })();
+  </script>
+</body>
+</html>
